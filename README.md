@@ -1,3 +1,17 @@
+##  Coming soon! A new way to complete local LLM PR Reviews
+I've developed a brand new way to use Github runners securely and remotely with your LM Studio installation. I've had great success in using this topology for real world application developement teams, greatly increasing their PR velocity.
+
+### The new version works like this:
+
+-- Install my agent in the source repo
+-- my agent runs a custom prompt explaining the rules
+-- my agent fetches context (that you specify in the yaml)
+-- my agent type is configured via github vars - you control the actual open weights model you want and context sizes
+-- my agent finds a free runner from a set of runners that you've configered (super scalable!)
+
+
+## Previous (now deprecated) veraion
+---
 LMStudio Headless Server
 This repository contains the bootstrap scripts and configuration for running a headless local LLM on a minimal Debian box. It is optimized for high-performance serving using lmstudio.service and ngrok for secure remote access.
 
