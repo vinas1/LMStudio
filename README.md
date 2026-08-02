@@ -1,16 +1,27 @@
-##  Coming soon! A new way to complete local LLM PR Reviews
-I've developed a brand new way to use Github runners securely and remotely with your LM Studio installation. I've had great success in using this topology for real world application developement teams, greatly increasing their PR velocity.
+## Coming Soon: AI-Powered Pull Request Reviews
 
-### The new version works like this:
+I've built the next evolution of local LLM code reviews.
 
--- Install my agent in the source repo
--- my agent runs a custom prompt explaining the rules
--- my agent fetches context (that you specify in the yaml)
--- my agent type is configured via github vars - you control the actual open weights model you want and context sizes
--- my agent finds a free runner from a set of runners that you've configered (super scalable!)
+This new capability helps teams review pull requests faster while keeping their code, context, and AI models within their own environment. It is designed to integrate directly into existing GitHub workflows and provide consistent, context-aware feedback across repositories.
 
+<br>
 
-## Previous (now deprecated) veraion
+### What you can expect
+
+- Automated pull request reviews directly within GitHub
+- Repository-aware feedback that aligns with your team's standards
+- Support for your choice of approved local AI models
+- Secure processing within your organization's environment
+- Scalable architecture designed for individual teams or enterprise adoption
+- Faster review cycles with less manual effort and context switching
+
+<br>
+
+Whether you're reviewing infrastructure as code, application code, configuration changes, or platform automation, the goal is simple: deliver actionable feedback sooner and help teams merge high-quality changes with greater confidence... and it all happens locally, without consuming 1 cent of tokens :)
+
+More details coming soon.
+
+## Previous (now deprecated) version
 ---
 LMStudio Headless Server
 This repository contains the bootstrap scripts and configuration for running a headless local LLM on a minimal Debian box. It is optimized for high-performance serving using lmstudio.service and ngrok for secure remote access.
